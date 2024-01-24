@@ -1,0 +1,55 @@
+.button-hien{
+    background-color: #1bcfb4;
+    line-height:30px; 
+    color:white; 
+    border-radius: 0.1875rem; 
+    width:51px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: "ubuntu-bold", sans-serif;
+    margin-bottom: 0;
+}
+.button-an{
+    background-color: #fe7c96;
+    line-height:30px; 
+    color:white; 
+    border-radius: 0.1875rem; 
+    width:51px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: "ubuntu-bold", sans-serif;
+    margin-bottom: 0; 
+}
+.button-wait{
+    background-color: #fe7c96;
+    line-height:30px; 
+    color:white; 
+    border-radius: 0.1875rem; 
+    width:100px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: "ubuntu-bold", sans-serif;
+    margin-bottom: 0; 
+}
+.button-confirmed{
+    background-color: #1bcfb4;
+    line-height:30px; 
+    color:white; 
+    border-radius: 0.1875rem; 
+    width:100px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: "ubuntu-bold", sans-serif;
+    margin-bottom: 0;
+}
+.button-delivering{
+    background-color: orange;
+    line-height:30px; 
+    color:white; 
+    border-radius: 0.1875rem; 
+    width:110px;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: "ubuntu-bold", sans-serif;
+    margin-bottom: 0;
+}

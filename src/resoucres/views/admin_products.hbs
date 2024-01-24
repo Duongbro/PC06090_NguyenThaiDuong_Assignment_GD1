@@ -1,0 +1,82 @@
+<!-- partial -->
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                    <i class="mdi mdi-tag-multiple"></i>
+                </span> Quản Lý Sản Phẩm
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span></span>Overview <i
+                            class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Sản Phẩm</h4>
+                        <a href="?page=product_add"><button type="button" class="btn btn-gradient-primary btn-sm">Thêm
+                                sản phẩm</button></a>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:50px;"> ID </th>
+                                        <th style="width:100px;"> Tên sản phẩm </th>
+                                        <th style="width:150px;"> Giá </th>
+                                        <th style="width:100px;"> Hình ảnh </th>
+                                        {{!-- <th style="width:150px;"> Trạng thái </th> --}}
+                                        <th style="width:50px;"> </th>
+                                        <th style="width:50px;"> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {{{load_products}}}
+
+                                </tbody>
+                            </table>
+                            {{!-- <nav aria-label="Page navigation example" style="margin-top:50px;">
+                                <ul class="pagination">
+                                    <?php if ($cr_page - 1 > 0) { ?>
+                                    <li class="page-item"><a class="page-link"
+                                            href="?page=product&pages=<?= $cr_page - 1 ?>"
+                                            style="color: black;">&laquo;</a></li>
+                                    <?php } ?>
+                                    <?php
+                                        for ($i = 1; $i <= $page; $i++) { ?>
+                                    <li class="page-item <?php echo (($cr_page == $i) ? 'active' : '') ?>"><a
+                                            class="page-link" href="?page=product&pages=<?= $i ?>"
+                                            style="color: black; background-color: white;">
+                                            <?= $i ?>
+                                        </a></li>
+                                    <?php
+                                        }
+                                        ?>
+                                    <?php if ($cr_page + 1 < $page) { ?>
+                                    <li class="page-item"><a class="page-link"
+                                            href="?page=product&pages=<?= $cr_page + 1 ?>"
+                                            style="color: black;">&raquo;</a></li>
+                                    <?php } ?>
+                                </ul>
+                            </nav> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+
+    <!-- partial -->
+</div>
+<!-- main-panel ends -->
+
+<!-- page-body-wrapper ends -->
+</div>

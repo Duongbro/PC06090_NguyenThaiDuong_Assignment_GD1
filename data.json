@@ -1,0 +1,65 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Hành Động"
+        },
+        {
+            "id": 2,
+            "name": "Kinh Dị"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "呪術廻戦 21 - Jujutsu Kaisen 21",
+            "cate_id": 1,
+            "price": "200000",
+            "detail": "",
+            "image": "https://cdn0.fahasa.com/media/catalog/product/9/7/9784088833118.jpg"
+        },
+        {
+            "id": 2,
+            "name": "呪術廻戦 19 - Jujutsu Kaisen 19",
+            "cate_id": 1,
+            "price": "150000",
+            "detail": "",
+            "image": "https://cdn0.fahasa.com/media/catalog/product/9/7/9784088830681.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Sakamoto Days 6",
+            "cate_id": 2,
+            "price": "145000",
+            "detail": "",
+            "image": "https://cdn0.fahasa.com/media/catalog/product/9/7/9784088830728.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Sakamoto Days 10",
+            "cate_id": 2,
+            "price": "153000",
+            "detail": "",
+            "image": "https://cdn0.fahasa.com/media/catalog/product/9/7/9784088834290.jpg"
+        }
+    ],
+    "orders": [
+        {
+            "id": 1,
+            "customer_name": "Nguyễn Thái Dương",
+            "customer_address": "Cái Răng, Cần Thơ",
+            "customer_email": "nguyenduongthai000@gmail.com",
+            "customer_phone_number": "0948273123",
+            "created": "23-1-2024",
+            "status": "Chờ Xác Nhận"
+        }
+    ],
+    "order_detail": [
+        {
+            "order_id": 1,
+            "product_id": "1",
+            "quantity": "1",
+            "unit_price": "200000"
+        }
+    ]
+}
