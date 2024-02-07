@@ -1,0 +1,91 @@
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                    <i class="mdi mdi-tag-multiple"></i>
+                </span> Quản Lý Sản Phẩm
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span></span>Overview <i
+                            class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Thêm Sản Phẩm</h4>
+                        <p class="card-description"> </p>
+                        <form class="forms-sample" method="POST" enctype="multipart/form-data"
+                            action="/admin_home/products_add">
+                            <div class="form-group">
+                                <label for="exampleInputName1">Tên sản phẩm</label>
+                                <input type="text" class="form-control" id="exampleInputName1"
+                                    placeholder="Tên sản phẩm" name="name_product">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputName1">Tác giả</label>
+                                <input type="text" class="form-control" id="exampleInputName1" placeholder="Tên tác giả"
+                                    name="author_product">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail3">Giá sản phẩm</label>
+                                <input type="number" class="form-control" id="exampleInputEmail3"
+                                    placeholder="Giá sản phẩm" name="price_product">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword4">Mô tả sản phẩm</label>
+                                <textarea id="editor" cols="30" rows="10"
+                                    placeholder="Mô tả ở đây" name="detail_product"></textarea>
+                                {{!-- <input type="text" class="form-control" id="exampleInputName1" placeholder="Mô tả"
+                                    name="detail_product"> --}}
+                            </div>
+                            <div class="form-group">
+                                <label>Ảnh sản phẩm</label>
+                                <div class="input-group col-xs-12">
+                                    <input type="file" class="form-control file-upload-info" placeholder="Ảnh sản phẩm"
+                                        name="img_product">
+                                </div>
+                            </div>
+                            {{!-- <div class="form-group">
+                                <label>Các ảnh nhỏ của sản phẩm</label>
+                                <div class="input-group col-xs-12">
+                                    <input type="file" class="form-control file-upload-info" name="images[]"
+                                        multiple="">
+                                </div>
+                            </div> --}}
+                            <div class="form-group">
+                                <label for="exampleSelectGender">Thể loại</label>
+                                <select class="form-control" id="exampleSelectGender" name="category_product">
+                                    <option value="">Chọn thể loại</option>
+                                    {{{load_cate}}}
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputCity1">Số lượng</label>
+                                <input type="number" class="form-control" id="exampleInputCity1" placeholder="Số lượng"
+                                    name="quantity_product">
+                            </div>
+                            <button type="submit" class="btn btn-gradient-primary me-2" name="product_add"
+                                value="product_add">Xác nhận</button>
+                            <a href="/admin_home/products" class="btn btn-light">Hủy</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
+    <footer class="footer">
+        <div class="container-fluid d-flex justify-content-between">
+            <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Kuronami - Manga</span>
+        </div>
+    </footer>
+    <!-- partial -->
+</div>

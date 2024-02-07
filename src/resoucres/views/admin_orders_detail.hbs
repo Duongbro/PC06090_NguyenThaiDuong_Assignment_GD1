@@ -1,0 +1,58 @@
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                    <i class="mdi mdi-truck"></i>
+                </span> Quản Lý Đơn Hàng
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span></span>Overview <i
+                            class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Chi Tiết Đơn Hàng</h4>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="width:50px;"> ID </th>
+                                        <th style="width:50px;"> ID Order </th>
+                                        <th style="width:150px;"> Tên sản phẩm </th>
+                                        <th style="width:150px;"> ID sản phẩm </th>
+                                        <th style="width:130px;"> Số lượng </th>
+                                        <th style="width:100px;"> Giá </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{#each orders_detail_load}}
+                                        <td>{{this.id}}</td>
+                                        <td>{{this.order_id}}</td>
+                                        <td>{{this.}}</td>
+                                        <td>{{this.product_id}}</td>
+                                        <td>{{this.quantity}}</td>
+                                        <td>{{this.unit_price}}</td>                                    
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
+
+    <!-- partial -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
